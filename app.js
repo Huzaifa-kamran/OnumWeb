@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $(function () {
         $(window).on('scroll', function () {
-          if ($(window).scrollTop() > 70) {
+          if ($(window).scrollTop() > 100) {
             $('.navbar').addClass('active');
             $('.navbar').addClass('fixed-top');
           } else {
