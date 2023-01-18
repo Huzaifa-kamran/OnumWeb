@@ -19,6 +19,39 @@
     <link rel="stylesheet" href="style.css">
     <title>Home 3-Onum</title>
 </head>
+<style>
+  @media (max-width:576px) {
+  .progress{
+    width: 300px;
+  }
+}
+
+@media (max-width:300px) {
+  .progress{
+    width: 220px;
+  }
+}
+
+  @media  (min-width:986px) {
+    #pages-hover{
+  position: absolute;
+  margin: auto;
+  margin-left: -450px !important;
+  /* right: 0px; */
+  /* left: 0px; */
+  background-color: #f1f1f1;
+  width: 90vw;
+  /* width: 100%; */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  animation: dropdown 300ms ease-in-out forwards;
+  border-radius: 20px;
+  height: auto;
+  /* overflow: scroll; */
+}
+}
+
+</style>
 <body>
   
   <header class="container-fluid header d-none d-lg-block">
@@ -59,13 +92,68 @@
             <a class="nav-link  nav-hover" href="#" role="button">
               Pages
             </a>
-            <!-- <ul class="dropdown-content" id="pages-hover">
-              <li><a class="dropdown-item" href="kitchentool.html">Kitchen Tools</a></li>
-              <li><a class="dropdown-item" href="ceramics.html">Ceramics</a></li>
-              <li><a class="dropdown-item" href="BBQ's.html">BBQ Items</a></li>
-              <li><a class="dropdown-item" href="Cutlery.html">Cutlery</a></li>
-              <li><a class="dropdown-item" href="baking.html">Baking Tools</a></li>
-            </ul> -->
+            <!-- Pages Dropdown Content  Starts-->
+            <div class="dropdown-content" id="pages-hover">
+              <div class="container text-start">
+                <div class="row mt-5">
+
+                  <div class="col">
+                    <h6 class="fw-bold">COMPANY</h6>
+                    <a href="" class="nav-page-links">About Us</a>
+                    <a href="" class="nav-page-links">Our Team</a>
+                    <a href="" class="nav-page-links">Single Team</a>
+                    <a href="" class="nav-page-links">Our Process</a>
+                    <a href="" class="nav-page-links">FAQ</a>
+                    <a href="" class="nav-page-links">Coming Soon</a>
+                    <a href="" class="nav-page-links">404 Error</a>
+
+                    <h6 class="fw-bold">ONLINE STORE</h6>
+                    <a href="" class="nav-page-links">Catelog Page</a>
+                    <a href="" class="nav-page-links">Cart Page</a>
+                    <a href="" class="nav-page-links">Checkout Page</a>
+                    <a href="" class="nav-page-links">Single Product</a>
+                  </div>
+
+                  <div class="col">
+                    
+                    <h6 class="fw-bold">HEADER LAYOUTS</h6>
+                    <a href="" class="nav-page-links">Header 1</a>
+                    <a href="" class="nav-page-links">Header 2</a>
+                    <a href="" class="nav-page-links">Header 3</a>
+                    <a href="" class="nav-page-links">Header 4</a>
+                    <a href="" class="nav-page-links">Header 5</a>
+                    <a href="" class="nav-page-links">Header 6</a>
+
+                    <h6 class="fw-bold">FOOTER LAYOUTS</h6>
+                    <a href="" class="nav-page-links">Footer 1</a>
+                    <a href="" class="nav-page-links">Footer 2</a>
+                    <a href="" class="nav-page-links">Footer 3</a>
+                    <a href="" class="nav-page-links">Footer 4</a>
+
+                  </div>
+                  <div class="col">
+                    
+                    <h6 class="fw-bold">ELEMENTS</h6>
+                    <a href="" class="nav-page-links">Pricing Tables</a>
+                    <a href="" class="nav-page-links">Testimonials</a>
+                    <a href="" class="nav-page-links">Icon Boxes</a>
+                    <a href="" class="nav-page-links">Service Boxes</a>
+                    <a href="" class="nav-page-links">Progress Bars</a>
+                    <a href="" class="nav-page-links">Counters</a>
+                    <a href="" class="nav-page-links">Typography</a>
+                    <a href="" class="nav-page-links">Accordians</a>
+                    <a href="" class="nav-page-links">Tabs</a>
+                    <a href="" class="nav-page-links">Message Boxes</a>
+                    <a href="" class="nav-page-links">Partners</a>
+
+                  </div>
+                  <div class="col">
+                    <img src="images/watch.png" alt="">
+                  </div>
+                </div>
+              </div>
+          </div>
+<!-- Pages Dropdown Content  Ends-->
             <ul class="dropdown-content">
               <li><a class="dropdown-item" href="kitchentool.html">Kitchen Tools</a></li>
               <li><a class="dropdown-item" href="ceramics.html">Ceramics</a></li>

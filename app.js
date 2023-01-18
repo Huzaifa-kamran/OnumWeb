@@ -10,6 +10,7 @@ $(document).ready(function () {
           }
         });
       });
+
       $(window).on('scroll', function () {
         $('.num-counter').each(function() {
             var pos_y   = $(this).offset().top - window.innerHeight;
@@ -37,4 +38,11 @@ $(document).ready(function () {
             }
         });
     });
+
+    // if (screen.width > 1025) {
+    //     $('.navbar').addClass('navbar-expand');
+    // }
+    // else{
+    //     $('.navbar').removeClass('navbar-expand');
+    // }
   });
