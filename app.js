@@ -10,7 +10,48 @@ $(document).ready(function () {
           }
         });
       });
+    $('#search-icon').click(function (e) { 
+        // $('#search-content').css({"display": "block"});
+        // alert("click");
+        $('#search-content').toggle();
+        $('#search-icon-img').toggleClass("fa-solid fa-xmark");
+      //  if($('#search-icon-img').attr("src", "images/search-interface-symbol.png")){
+      //     $('#search-icon-img').attr("src", "images/dots-menu.png");
+      //   }
+      //   else if($('#search-icon-img').attr("src", "images/dots-menu.png")){
+      //     $('#search-icon-img').attr("src", "images/search-interface-symbol.png")
+      //   }
+      //   else{
+      //     $('#search-icon-img').attr("src", "images/dots-menu.png")
+      //   }
+    });
+  //   $('#search-icon').click(function (e) { 
+  //     if($('#search-icon-img').attr("src", "images/search-interface-symbol.png")){
+  //       $('#search-icon-img').attr("src", "images/dots-menu.png");
+  //     }
+  //     else if($('#search-icon-img').attr("src", "images/dots-menu.png")){
+  //       $('#search-icon-img').attr("src", "images/search-interface-symbol.png");
+  //     }
+  //   else{
+  //     $('#search-icon-img').attr("src", "images/search-interface-symbol.png");
+  //   }  
+  // });
 
+$('#side-menu').click(function (e) { 
+  $('.side-overlay').css({"display": "block"});
+});
+$('.side-closing').click(function (e) { 
+  $('.side-overlay').css({"display": "none"});
+  alert("as")
+});
+$('.side-closing-div').click(function (e) { 
+  $('.side-overlay').css({"display": "none"});
+});
+$('.side-panel').click(function (e) { 
+  $('.side-overlay').css({"display": "block"});
+});
+    
+    
       $(window).on('scroll', function () {
         $('.num-counter').each(function() {
             var pos_y   = $(this).offset().top - window.innerHeight;

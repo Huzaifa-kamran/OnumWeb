@@ -209,15 +209,118 @@
           </li>
         </ul>
       </div>
-    <a class="navbar-icons-span">
-      <img class="navbar-icons" src="images/shopping-cart.png"  alt="">
+
+    <div class="dropdown"> 
+    <a class="navbar-icons-span dropdown">
+      <img class="navbar-icons cart-icon" src="images/shopping-cart.png"  alt="">
     </a>
-    <a class="navbar-icons-span">
-      <img class="navbar-icons" src="images/search-interface-symbol.png" alt="">
+    <div class="dropdown-content" id="cart">
+     <p>No products in the cart.</p>
+    </div>
+  </div>
+
+  <div id="search-icon" class="text-center"> 
+    <a class="navbar-icons-span dropdown">
+      <!-- <img class="navbar-icons" id="search-icon-img" src="images/search-interface-symbol.png"  alt=""> -->
+      <i class="fa fa-search navbar-icons" id="search-icon-img" aria-hidden="true"></i>
     </a>
+  </div>
+    <div id="search-content">
+     <input type="text" name="" id="search-input" placeholder="Search...">
+     <button class="search-btn"> 
+     <i class="fa fa-search " aria-hidden="true"></i>
+    </button>
+    </div>
+  <div id="side-menu">
     <a class="navbar-icons-span">
       <img class="navbar-icons" src="images/dots-menu.png" alt="">
     </a>
+  </div>
+    <!-- Side Content Start  -->
+    <div class="side-overlay">
+      <div class="side-closing-div">
+      </div>
+      <div class="side-panel">
+        <div class="side-closing">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <img src="images/logo-home-9.png" alt="">
+        <div class="container mt-4">
+         <p class="side-para">Over 10 years we helping companies reach their financial 
+            and branding goals. Onum is a values-driven SEO agency dedicated.
+         </p>
+        </div>
+
+        <div class="container mt-5">
+          <h6 class="fw-bold">LATEST NEWS</h6>
+        </div>
+
+          <div class="container-fluid text-start mt-4">
+            <div class="row">
+              <div class="col col-3">
+                <a href="">
+                <img class="news-img" src="images/post-1-100x100.jpg" alt="">
+              </a>
+              </div>
+              <div class="col col-9">
+                <h6 class="fw-bold"><a href="#" class="news-links">15 SEO Best Practices: Website Architecture</a></h6>
+                <span class="news-time">November 21, 2019</span>
+              </div>
+            </div>
+
+            <div class="row mt-4">
+              <div class="col col-3">
+                <a href="">
+                <img class="news-img" src="images/post-2-100x100.jpg" alt="">
+              </a>
+              </div>
+              <div class="col col-9">
+                <h6 class="fw-bold"><a href="#" class="news-links">SEO Best Practices: Mobile  Friendliness</a></h6>
+                <span class="news-time">November 21, 2019</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="container mt-4">
+            <h6 class="fw-bold">CONTACTS</h6>
+          </div>
+          
+          <div class="container">
+            
+                <div class="row">
+                  <div class="col col-2 text-center">
+                    <i class="fa-solid fa-location-dot cont-icons"></i>
+                  </div>
+                  <div class="col col-10">
+                    <a href="#" class="cont-links">411 University St, Seattle, <br>   10005, USA</a>
+                  </div>
+
+                  <div class="col col-2 text-center mt-2">
+                    <i class="fa-solid fa-paper-plane cont-icons"></i>
+                  </div>
+                  <div class="col col-10 mt-3">
+                    <a href="#" class="cont-links">onum_company@mail.com</a>
+                  </div>
+                  <div class="col col-2 text-center mt-2">
+                    <i class="fa-solid fa-phone cont-icons"></i>
+                  </div>
+                  <div class="col col-10 mt-3">
+                    <a href="#" class="cont-links ">+1-800-456-478-23</a>
+                  </div>
+                </div>
+
+                <div class="container side-pan-footer mt-5">
+                  <a href="" class="side-social-icons" id="footer-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  <a href="" class="side-social-icons" id="footer-fb"><i class="fa fa-facebook-f" aria-hidden="true"></i></a>
+                  <a href="" class="side-social-icons" id="footer-pint"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                  <a href="" class="side-social-icons" id="footer-insta"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+
+                </div>
+          </div>
+
+      </div>
+    </div>
+    <!-- Side Content End  -->
     </div>
   </nav>
   <!-- Navbar Ends -->
