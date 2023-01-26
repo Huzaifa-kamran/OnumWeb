@@ -42,7 +42,6 @@ $('#side-menu').click(function (e) {
 });
 $('.side-closing').click(function (e) { 
   $('.side-overlay').css({"display": "none"});
-  alert("as")
 });
 $('.side-closing-div').click(function (e) { 
   $('.side-overlay').css({"display": "none"});

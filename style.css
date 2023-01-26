@@ -99,6 +99,9 @@ body{
   border-radius: 50%;
   cursor: pointer;
 }
+.green-text{
+  color: #00c3ff;
+}
 /* Cart icon  */
 #cart{
   background-color: #fff;
@@ -154,7 +157,6 @@ body{
 }
 
 .side-overlay{
-  
   height: 100%;
   width: 100vw;
   position: fixed;
@@ -188,10 +190,12 @@ body{
 .side-closing{
   position: fixed;
   right: 3%;
+  top: 5%;
   color: #606060;
   font-size: 22px;
   font-weight: lighter;
   z-index: 1000;
+  cursor: pointer;
 
 }
 .side-para{
