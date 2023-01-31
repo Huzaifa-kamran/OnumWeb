@@ -945,70 +945,75 @@ border-right: 1px solid rgba(129, 123, 123, 0.486) !important;
 .slider-links{
   text-decoration: none;
 }
-
-.card {
+.service-cards{
+  border: none;
+  outline: none;
+  transition: 500ms all ease-in-out;
+  border-radius: 25px;
+}
+.serv-bg-1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  transition: 500ms all ease-in-out !important;
+}.serv-bg-2{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: none;
+  transition: 500ms all ease-in-out;
+}
+.service-cards:hover{
+  box-shadow:
+  8.4px 8.1px 10px rgba(0, 0, 0, 0.035),
+  67px 65px 80px rgba(0, 0, 0, 0.07)
+;
+}
+.service-cards:hover .serv-bg-1{
+  display: block;
+}
+.service-cards:hover .serv-bg-2{
+  display: block;
+}
+.serv-icons{
+  color: #0039e4;
+  font-size: 30px;
+}
+.video-cont{
+  width: 100%;
+  height: 250px;
+  border-radius: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  background-color: #ffffff;
-  margin: 0 20px;
-  width: 280px;
-  height: 350px;
-  border-radius: 5px;
-  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.2);
+  background-image: url(images/bg-counter-1.jpg);
 }
-
-.card .percent {
-  position: relative;
+.video-cont h1{
+  color: #fff;
+  font-size: 48px;
+  font-weight: bolder;
 }
-
-.card svg {
-  position: relative;
-  width: 210px;
-  height: 210px;
-  transform: rotate(-90deg);
-}
-
-.card svg circle {
-  width: 100%;
-  height: 100%;
-  fill: none;
-  stroke: #f0f0f0;
-  stroke-width: 0;
-  stroke-linecap: round;
-}
-
-.card svg circle:last-of-type {
-  stroke-dasharray: 625px;
-  stroke-dashoffset: calc(625px - (625px * var(--percent)) / 100);
-  stroke: #3498db; 
-}
-
-.card .number {
+.seo-card-btn{
+  background-color: #fe4c1c;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 7%;
+  left: 7%;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  padding: 3px 10px;
 }
-
-.card .number h3 {
-  font-weight: 200;
-  font-size: 3.5rem;
-}
-
-.card .number h3 span {
-  font-size: 2rem;
-}
-
-.card .title h2 {
-  margin: 25px 0 0;
-}
-
-.card:nth-child(1) svg circle:last-of-type {
-  stroke: #f39c12;
-}
-
-.card:nth-child(2) svg circle:last-of-type {
-  stroke: #2ecc71;
+.seo-card-btn2{
+  background-color: #fe4c1c;
+  position: absolute;
+  top: 7%;
+  left: 38%;
+  font-size: 12px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 3px 10px;
 }
