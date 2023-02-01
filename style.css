@@ -234,6 +234,7 @@ body{
 }
 .side-social-icons{
   color: #fff;
+  background-color: #fff;
   padding: 7px 10px;
   border-radius: 50%;
   margin:2px 4px ;
@@ -568,25 +569,20 @@ body{
   font-size: 24px;
   font-weight: 900;
   font-family: "Red Hat Display",sans-serif;
-  display: inline-block;
-  /* position: absolute; */
-  /* left: 50%; */
-  /* top: -35px; */
-  margin-left: 90px;
-  margin-bottom: 45px;
+  position: absolute;
+  left: 40%;
+  top: -45px;
   border-radius: 50%;
-  background-color: #0039e4;
-  background-image: -moz-linear-gradient(145deg,#0039e4,#04dbf1);
-  background-image: -webkit-linear-gradient(145deg,#0039e4,#04dbf1);
   background-image: linear-gradient(145deg,#0039e4,#04dbf1);
   box-shadow: 10px 10px 30px 0 rgb(2 156 236 / 30%);
   -webkit-box-shadow: 10px 10px 30px 0 rgb(2 156 236 / 30%);
   -moz-box-shadow: 10px 10px 30px 0 rgba(2,156,236,.3);
 }
 .arrows{
-  /* position: absolute; */
-  float: right;
-  margin-top:10px;
+  position: absolute;
+  top: -5%;
+  right: -20%;
+  z-index: 100;
 }
 .process-box{
   outline: none;
@@ -1086,6 +1082,7 @@ border-right: 1px solid rgba(129, 123, 123, 0.486) !important;
 .footer-images img{
   width: 100%;
   border-radius: 10px;
+  margin-top: 5%;
 }
 .footer-bottom{
   width: 100%;
@@ -1097,4 +1094,26 @@ border-right: 1px solid rgba(129, 123, 123, 0.486) !important;
   border-style:solid ;
   border-width: 1px 0px 0px 0px;
   border-color: rgba(255,255,255,0.1);
+}
+.main-footer-icons{
+  margin:8px!important;
+  background-color: #fff;
+  padding: 7px 10px;
+  border-radius: 50%;
+}
+.main-footer-icons:hover{
+ margin-bottom: 4px;
+}
+#footer-social-twitter{
+color: #44b1e4;
+}
+#footer-social-fb{
+  color: #4661c5;
+ padding:7px 14px;
+}
+#footer-social-pin{
+  color: #ff2e2e;
+}
+#footer-social-insta{
+  color:#ff6828 ;
 }

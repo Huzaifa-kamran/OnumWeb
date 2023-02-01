@@ -98,6 +98,9 @@
   .progress{
     width: 220px;
   }
+  .nav-side-items{
+    padding: 0 !important;
+  }
 }
 
   @media  (min-width:986px) {
@@ -146,10 +149,8 @@
     <div class="container-fluid">
       <a class="navbar-brand" href="#" ><img src="images/logo-home-9.png" alt=""
           class="logo"></a>
-
-        
             <div class="row justify-content-end">
-              <div class="col">
+              <div class="col nav-side-items">
                 <div class="dropdown"> 
                     <a class="navbar-icons-span dropdown">
                       <img class="navbar-icons cart-icon" src="images/shopping-cart.png"  alt="">
@@ -160,7 +161,7 @@
                   </div>
               </div>
 
-              <div class="col">
+              <div class="col nav-side-items">
                 <div id="search-icon" class="text-center"> 
                     <a class="navbar-icons-span dropdown">
                       <!-- <img class="navbar-icons" id="search-icon-img" src="images/search-interface-symbol.png"  alt=""> -->
@@ -172,98 +173,6 @@
                      <button class="search-btn"> 
                      <i class="fa fa-search " aria-hidden="true"></i>
                     </button>
-                    </div>
-              </div>
-              <div class="col d-none d-sm-none d-md-none d-lg-block">
-                <div id="side-menu">
-                    <a class="navbar-icons-span">
-                      <img class="navbar-icons" src="images/dots-menu.png" alt="">
-                    </a>
-                  </div>
-                    <!-- Side Content Start  -->
-                    <div class="side-overlay">
-                      <div class="side-closing">
-                        <i class="fa-solid fa-xmark"></i>
-                      </div>
-                      <div class="side-closing-div">
-                      </div>
-                      <div class="side-panel">
-                        
-                        <img src="images/logo-home-9.png" alt="">
-                        <div class="container mt-4">
-                         <p class="side-para">Over 10 years we helping companies reach their financial 
-                            and branding goals. Onum is a values-driven SEO agency dedicated.
-                         </p>
-                        </div>
-                
-                        <div class="container mt-5">
-                          <h6 class="fw-bold">LATEST NEWS</h6>
-                        </div>
-                
-                          <div class="container-fluid text-start mt-4">
-                            <div class="row">
-                              <div class="col col-3">
-                                <a href="">
-                                <img class="news-img" src="images/post-1-100x100.jpg" alt="">
-                              </a>
-                              </div>
-                              <div class="col col-9">
-                                <h6 class="fw-bold"><a href="#" class="news-links">15 SEO Best Practices: Website Architecture</a></h6>
-                                <span class="news-time">November 21, 2019</span>
-                              </div>
-                            </div>
-                
-                            <div class="row mt-4">
-                              <div class="col col-3">
-                                <a href="">
-                                <img class="news-img" src="images/post-2-100x100.jpg" alt="">
-                              </a>
-                              </div>
-                              <div class="col col-9">
-                                <h6 class="fw-bold"><a href="#" class="news-links">SEO Best Practices: Mobile  Friendliness</a></h6>
-                                <span class="news-time">November 21, 2019</span>
-                              </div>
-                            </div>
-                          </div>
-                
-                          <div class="container mt-4">
-                            <h6 class="fw-bold">CONTACTS</h6>
-                          </div>
-                          
-                          <div class="container">
-                            
-                                <div class="row">
-                                  <div class="col col-2 text-center">
-                                    <i class="fa-solid fa-location-dot cont-icons"></i>
-                                  </div>
-                                  <div class="col col-10">
-                                    <a href="#" class="cont-links">411 University St, Seattle, <br>   10005, USA</a>
-                                  </div>
-                
-                                  <div class="col col-2 text-center mt-2">
-                                    <i class="fa-solid fa-paper-plane cont-icons"></i>
-                                  </div>
-                                  <div class="col col-10 mt-3">
-                                    <a href="#" class="cont-links">onum_company@mail.com</a>
-                                  </div>
-                                  <div class="col col-2 text-center mt-2">
-                                    <i class="fa-solid fa-phone cont-icons"></i>
-                                  </div>
-                                  <div class="col col-10 mt-3">
-                                    <a href="#" class="cont-links ">+1-800-456-478-23</a>
-                                  </div>
-                                </div>
-                
-                                <div class="container side-pan-footer mt-5">
-                                  <a href="" class="side-social-icons" id="footer-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                  <a href="" class="side-social-icons" id="footer-fb"><i class="fa fa-facebook-f" aria-hidden="true"></i></a>
-                                  <a href="" class="side-social-icons" id="footer-pint"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-                                  <a href="" class="side-social-icons" id="footer-insta"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                
-                                </div>
-                          </div>
-                
-                      </div>
                     </div>
               </div>
             </div>
@@ -279,82 +188,29 @@
       <div class="collapse navbar-collapse justify-content-center"
         id="navbarNavDropdown">
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link nav-hover" id="home" href="index.html">Home <img class="nav-link-arrow" src="images/down.png" alt=""></a>
+          <li class="nav-item dropdown">
+            <a class="nav-link  nav-hover" href="#" role="button">
+              Home <img class="nav-link-arrow" src="images/down.png" alt="">
+            </a>
+            <ul class="dropdown-content">
+              <li><a class="dropdown-item" href="#">Main Home</a></li>
+              <li><a class="dropdown-item" href="#">SEO Agency</a></li>
+              <li><a class="dropdown-item" href="#">Marketing Company</a></li>
+              <li><a class="dropdown-item" href="#">Digital Marketing</a></li>
+              <li><a class="dropdown-item" href="#">SEO Company</a></li>
+            </ul>
           </li>
           
           <li class="nav-item dropdown">
             <a class="nav-link  nav-hover" href="#" role="button">
               Pages <img class="nav-link-arrow" src="images/down.png" alt="">
             </a>
-            <!-- Pages Dropdown Content  Starts-->
-            <div class="dropdown-content" id="pages-hover">
-              <div class="container text-start">
-                <div class="row mt-5">
-
-                  <div class="col">
-                    <h6 class="fw-bold ms-3">COMPANY</h6>
-                    <a href="" class="nav-page-links">About Us</a>
-                    <a href="" class="nav-page-links">Our Team</a>
-                    <a href="" class="nav-page-links">Single Team</a>
-                    <a href="" class="nav-page-links">Our Process</a>
-                    <a href="" class="nav-page-links">FAQ</a>
-                    <a href="" class="nav-page-links">Coming Soon</a>
-                    <a href="" class="nav-page-links">404 Error</a>
-
-                    <h6 class="fw-bold mt-4 ms-3">ONLINE STORE</h6>
-                    <a href="" class="nav-page-links">Catelog Page</a>
-                    <a href="" class="nav-page-links">Cart Page</a>
-                    <a href="" class="nav-page-links">Checkout Page</a>
-                    <a href="" class="nav-page-links">Single Product</a>
-                  </div>
-
-                  <div class="col">
-                    
-                    <h6 class="fw-bold ms-3">HEADER LAYOUTS</h6>
-                    <a href="" class="nav-page-links">Header 1</a>
-                    <a href="" class="nav-page-links">Header 2</a>
-                    <a href="" class="nav-page-links">Header 3</a>
-                    <a href="" class="nav-page-links">Header 4</a>
-                    <a href="" class="nav-page-links">Header 5</a>
-                    <a href="" class="nav-page-links">Header 6</a>
-
-                    <h6 class="fw-bold mt-4 ms-3">FOOTER LAYOUTS</h6>
-                    <a href="" class="nav-page-links">Footer 1</a>
-                    <a href="" class="nav-page-links">Footer 2</a>
-                    <a href="" class="nav-page-links">Footer 3</a>
-                    <a href="" class="nav-page-links">Footer 4</a>
-
-                  </div>
-                  <div class="col">
-                    
-                    <h6 class="fw-bold ms-3">ELEMENTS</h6>
-                    <a href="" class="nav-page-links">Pricing Tables</a>
-                    <a href="" class="nav-page-links">Testimonials</a>
-                    <a href="" class="nav-page-links">Icon Boxes</a>
-                    <a href="" class="nav-page-links">Service Boxes</a>
-                    <a href="" class="nav-page-links">Progress Bars</a>
-                    <a href="" class="nav-page-links">Counters</a>
-                    <a href="" class="nav-page-links">Typography</a>
-                    <a href="" class="nav-page-links">Accordians</a>
-                    <a href="" class="nav-page-links">Tabs</a>
-                    <a href="" class="nav-page-links">Message Boxes</a>
-                    <a href="" class="nav-page-links">Partners</a>
-
-                  </div>
-                  <div class="col">
-                    <img src="images/watch.png" width="" alt="">
-                  </div>
-                </div>
-              </div>
-          </div>
-<!-- Pages Dropdown Content  Ends-->
             <ul class="dropdown-content">
-              <li><a class="dropdown-item" href="kitchentool.html">Kitchen Tools</a></li>
-              <li><a class="dropdown-item" href="ceramics.html">Ceramics</a></li>
-              <li><a class="dropdown-item" href="BBQ's.html">BBQ Items</a></li>
-              <li><a class="dropdown-item" href="Cutlery.html">Cutlery</a></li>
-              <li><a class="dropdown-item" href="baking.html">Baking Tools</a></li>
+              <li><a class="dropdown-item" href="#">About Us</a></li>
+              <li><a class="dropdown-item" href="#">Our Team</a></li>
+              <li><a class="dropdown-item" href="#">Singel Team</a></li>
+              <li><a class="dropdown-item" href="#">Our Proces</a></li>
+              <li><a class="dropdown-item" href="#">Faqs</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -362,11 +218,11 @@
               Services <img class="nav-link-arrow" src="images/down.png" alt="">
             </a>
             <ul class="dropdown-content">
-              <li><a class="dropdown-item" href="kitchentool.html">Content Marketing</a></li>
-              <li><a class="dropdown-item" href="ceramics.html">App Development</a></li>
-              <li><a class="dropdown-item" href="BBQ's.html">Search Engine Optimization</a></li>
-              <li><a class="dropdown-item" href="Cutlery.html">PPC Management</a></li>
-              <li><a class="dropdown-item" href="baking.html">Social Media Marketing</a></li>
+              <li><a class="dropdown-item" href="#">Content Marketing</a></li>
+              <li><a class="dropdown-item" href="#">App Development</a></li>
+              <li><a class="dropdown-item" href="#">Search Engine Optimization</a></li>
+              <li><a class="dropdown-item" href="#">PPC Management</a></li>
+              <li><a class="dropdown-item" href="#">Social Media Marketing</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -374,12 +230,12 @@
               Portfolio <img class="nav-link-arrow" src="images/down.png" alt="">
             </a>
             <ul class="dropdown-content">
-              <li><a class="dropdown-item" href="kitchentool.html">Portfolio Masonry</a></li>
-              <li><a class="dropdown-item" href="ceramics.html">Portfolio Grid</a></li>
-              <li><a class="dropdown-item" href="BBQ's.html">Portfolio Grid 2</a></li>
-              <li><a class="dropdown-item" href="Cutlery.html">Portfolio Carousel</a></li>
-              <li><a class="dropdown-item" href="baking.html">Portfolio Carousel 2</a></li>
-              <li><a class="dropdown-item" href="baking.html">Portfolio Single</a></li>
+              <li><a class="dropdown-item" href="#">Portfolio Masonry</a></li>
+              <li><a class="dropdown-item" href="#">Portfolio Grid</a></li>
+              <li><a class="dropdown-item" href="#">Portfolio Grid 2</a></li>
+              <li><a class="dropdown-item" href="#">Portfolio Carousel</a></li>
+              <li><a class="dropdown-item" href="#">Portfolio Carousel 2</a></li>
+              <li><a class="dropdown-item" href="#">Portfolio Single</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -387,9 +243,9 @@
               Blog <img class="nav-link-arrow" src="images/down.png" alt="">
             </a>
             <ul class="dropdown-content">
-              <li><a class="dropdown-item" href="kitchentool.html">Blog List</a></li>
-              <li><a class="dropdown-item" href="BBQ's.html">Blog Grid</a></li>
-              <li><a class="dropdown-item" href="ceramics.html">Blog list</a></li>
+              <li><a class="dropdown-item" href="#">Blog List</a></li>
+              <li><a class="dropdown-item" href="#">Blog Grid</a></li>
+              <li><a class="dropdown-item" href="#">Blog list</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -397,8 +253,8 @@
               Contacts <img class="nav-link-arrow" src="images/down.png" alt="">
             </a>
             <ul class="dropdown-content">
-              <li><a class="dropdown-item" href="kitchentool.html">Contacts Us</a></li>
-              <li><a class="dropdown-item" href="ceramics.html">Free a Quote</a></li>
+              <li><a class="dropdown-item" href="#">Contacts Us</a></li>
+              <li><a class="dropdown-item" href="#">Free a Quote</a></li>
             </ul>
           </li>
         </ul>
