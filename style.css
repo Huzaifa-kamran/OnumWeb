@@ -8,7 +8,7 @@
 body{
   box-sizing: border-box;
   margin: 0px;
-  padding: 0px;
+  padding: 0px !important;
   overflow-x: hidden;
   overflow-y: scroll;
 }
@@ -100,7 +100,7 @@ body{
   cursor: pointer;
 }
 .green-text{
-  color: #00c3ff;
+  color: #11c4fa;
 }
 /* Cart icon  */
 #cart{
@@ -994,26 +994,107 @@ border-right: 1px solid rgba(129, 123, 123, 0.486) !important;
   font-size: 48px;
   font-weight: bolder;
 }
+.seo-cards{
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow:
+  8.4px 8.1px 10px rgba(0, 0, 0, 0.035),
+  67px 65px 80px rgba(0, 0, 0, 0.07);
+}
 .seo-card-btn{
   background-color: #fe4c1c;
   position: absolute;
-  top: 7%;
+  top: 9%;
   left: 7%;
   font-size: 12px;
+  font-weight: bold;
   color: #fff;
   text-transform: uppercase;
   border: none;
   border-radius: 4px;
   padding: 3px 10px;
+  transition: 400ms all ease-in-out;
+}
+.seo-card-btn:hover{
+  background-color: #fff;
+  color: #fe4c1c;
 }
 .seo-card-btn2{
   background-color: #fe4c1c;
   position: absolute;
-  top: 7%;
+  top: 9%;
   left: 38%;
+  font-weight: bold;
   font-size: 12px;
   color: #fff;
   border: none;
   border-radius: 4px;
   padding: 3px 10px;
+  transition: 400ms all ease-in-out;
+}
+.seo-card-btn2:hover{
+  background-color: #fff;
+  color: #fe4c1c;
+}
+.seo-card-links{
+  color: #a5b7d2;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 400ms all ease-in-out;
+}
+.seo-card-links:hover{
+  color: #000;
+}
+.seo-card-links:hover .seo-card-icons{
+  color: #fe4c1c;
+}
+.seo-card-links-dark{
+  color: #000;
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 400ms all ease-in-out;
+}
+.seo-card-links-dark:hover{
+  color: #fe4c1c;
+}
+#footer{
+  background-image: linear-gradient(to right, #002cae, #039ee5) ;
+  width: 100vw !important;
+  margin-left: -10px !important;
+  
+  color: #fff;
+}
+.footer-content{
+  padding: 8% 0%;
+}
+.footer-links{
+  color: #039ee5;
+  text-decoration: none;
+  display: block;
+  transition: 400ms all ease-in-out;
+}
+.footer-links:hover{
+  color: #fff;
+  text-decoration: underline;
+}
+.footer-images{
+  overflow: hidden;
+  
+}
+.footer-images img{
+  width: 100%;
+  border-radius: 10px;
+}
+.footer-bottom{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #acebff;
+  border-style:solid ;
+  border-width: 1px 0px 0px 0px;
+  border-color: rgba(255,255,255,0.1);
 }
