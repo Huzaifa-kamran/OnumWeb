@@ -662,7 +662,7 @@ body{
   background-color: #fff;
   /* height: 50px; */
   border-radius:35px ;
-  width: 60%;
+  width: 600px;
   padding:2px 0px;
   
   
@@ -670,6 +670,8 @@ body{
 .input-cont input{
   outline: none;
   border: none;
+  width: 80%;
+  border-radius:35px ;
   /* height: 60%; */
 }
 .url-inp{
@@ -902,9 +904,6 @@ border-right: 1px solid rgba(129, 123, 123, 0.486) !important;
 }
 .projects-style-2 .projects-box .portfolio-info .portfolio-info-inner {
   width: 310px;
-  width: -webkit-calc(100% - 60px);
-  width: -moz-calc(100% - 60px);
-  width: calc(100% - 60px);
   padding: 36px 10px 10px 10px;
   margin: 0 auto;
   background: #fff;
@@ -913,17 +912,7 @@ border-right: 1px solid rgba(129, 123, 123, 0.486) !important;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
-  -webkit-border-top-left-radius: 15px;
-  -webkit-border-top-right-radius: 15px;
-  -webkit-border-bottom-right-radius: 15px;
-  -webkit-border-bottom-left-radius: 15px;
-  -moz-border-radius-topleft: 15px;
-  -moz-border-radius-topright: 15px;
-  -moz-border-radius-bottomright: 15px;
-  -moz-border-radius-bottomleft: 15px;
   box-shadow: 8px 8px 30px 0px rgba(42, 67, 113, 0.15);
-  -webkit-box-shadow: 8px 8px 30px 0px rgba(42, 67, 113, 0.15);
-  -moz-box-shadow: 8px 8px 30px 0px rgba(42, 67, 113, 0.15);
 }
 .projects-style-2 .projects-box .portfolio-info h5 a {
   font-family: "Red Hat Display", sans-serif;

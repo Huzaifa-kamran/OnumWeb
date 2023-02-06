@@ -20,17 +20,66 @@
     <title>Home 3-Onum</title>
 </head>
 <style>
-  @media (max-width:576px) {
-  .progress{
-    width: 300px;
-  }
-}
-
-@media (max-width:300px) {
+  @media (max-width:300px) {
   .progress{
     width: 220px;
   }
+ 
 }
+
+
+  @media (max-width:575px) {
+  .progress{
+    width: 300px;
+  }
+  .form-main-cont h1{
+   font-size: 35px;
+  }
+  .input-cont{
+    background-color: transparent !important;
+  }
+  .input-cont input{
+    padding: 4px 10px;
+    margin-top: 4px;
+  }
+  .main-sec-left h1{
+    font-size: 32px !important;
+  }
+  .secondery-btn{
+    padding:2px 1em !important ;
+  }
+  .btn-inner{
+    border-width:5px;
+    padding:0px 14px !important ;
+  }
+  .portfolio-info{
+    opacity: 1 !important;
+    right: -38px !important;
+  }
+  .num-counter{
+  font-size: 28px;
+  }
+  .footer-images img{
+   width: 60%;
+  }
+}
+
+
+@media (min-width:576px) and (max-width:767px) {
+  .input-cont{
+    background-color: transparent !important;
+  }
+  .input-cont input{
+    padding: 4px 10px;
+    margin-top: 4px;
+  }
+  .portfolio-info{
+    opacity: 1 !important;
+    right: -38px !important;
+  }
+
+}
+
 
   @media  (min-width:986px) {
     #pages-hover{
@@ -66,6 +115,10 @@
   border-radius: 20px;
   height: auto;
   /* overflow: scroll; */
+}
+.aboutus-para{
+  z-index: 20px;
+  position: relative;
 }
 }
 
@@ -393,18 +446,20 @@
   </nav>
   <!-- Navbar Ends -->
 
+
+<!-- Main Section Start -->
     <div class="row">
       <div class="col col-12 col-sm-12 col-md-12 col-lg-6 main-sec-left">
         <h6>
           CHANGE OF YOUR VIEW OF SEO
         </h6>
-        <h1>
+        <h1 class="heading1">
           Ready to Be the First Page of Google?
         </h1>
         <p>
-          We bet you don’t spend much time on the 2nd page of <br> Google – so why should your website?
+          We bet you don’t spend much time on the 2nd page of Google – so why should your website?
         </p>
-      <div class="container d-flex">
+      <div class="container-fluid d-flex">
       
         <button class="secondery-btn mt-lg-2"><a href="#" class="sec-btn-link"> Start Now<i class="fa-solid fa-arrow-right"></i></a></i>
         </button>
@@ -418,7 +473,8 @@
         <img src="images/header-home3.png" width="100%" alt="">
       </div>
     </div>
-    <div class="container social-icons-cont" >
+
+    <div class="container social-icons-cont d-none d-lg-block" >
       <a href="" class="social-links"><i class="fa-brands fa-twitter"></i></a>
       <a href="" class="social-links"><i class="fa-brands fa-facebook"></i></a>
       <a href="" class="social-links"><i class="fa-brands fa-linkedin"></i></a>
@@ -463,7 +519,7 @@
   <div class="container text-center">
     <img class="d-none d-lg-block side-bg-image" src="images/shape-process-1.png" alt="">
     <div class="row">
-      <div class="col col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+      <div class="col col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mt-4">
       <div class="card process-box mt-4">
         <img class="arrows d-none d-lg-block" src="images/p-arrow1.png" alt="">
         <div class="number-box">01</div>
@@ -474,7 +530,7 @@
         </div>
       </div>
       </div>
-      <div class="col col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+      <div class="col col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mt-4">
       <div class="card process-box mt-4" >
         <img class="arrows d-none d-lg-block" src="images/p-arrow2-1.png" alt="">
         <div class="number-box">02</div>
@@ -485,13 +541,13 @@
         </div>
       </div>
       </div>
-      <div class="col col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-        <div class="card process-box mt-4" >
+      <div class="col col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mt-5">
+        <div class="card process-box " >
           <div class="number-box">03</div>
           <img src="images/process3-1.png" class="card-img-top process-img justify-content-center" alt="...">
           <div class="card-body">
             <h5 class="card-text mb-3 fw-bolder fs-4" style="z-index: 30;">Project Termination</h5>
-            <p class="card-text " style="z-index: 40;position: relative;">We’re a team of non-cynics who truly care for our work and for each other.</p>
+            <p class="card-text ">We’re a team of non-cynics who truly care for our work and for each other.</p>
           </div>
         </div>
       </div>
@@ -569,12 +625,6 @@
 <div class="container form-cont">
   <div class="continer text-center form-main-cont">
     <h1>Know your SEO Score!</h1>
-    <!-- <div class="container input-cont">
-     <input type="url" placeholder="Your Website URL" class="url-inp">
-     <input type="email" placeholder="Email">
-     <button class="secondery-btn"> I'M READY<i class="fa fa-arrow-right" aria-hidden="true"></i>
-     </button>
-    </div> -->
     <div class="container text-center justify-content-center d-flex">
       <div class="row input-cont">
         <div class="col-12 col-sm-12 col-md-4 col-lg-4 d-flex align-content-center">
@@ -585,7 +635,7 @@
         </div>
         <div class="col-12 col-sm-12 col-md-4 col-lg-4 text-end justify-content-lg-end 
         justify-content-sm-center justify-content-center d-flex">
-          <button class="secondery-btn" style="height: 41px;"> I'M READY<i class="fa fa-arrow-right" aria-hidden="true"></i>
+          <button class="secondery-btn mt-2 mt-sm-2 mt-md-0 mt-lg-0" style="height: 41px;"> I'M READY<i class="fa fa-arrow-right" aria-hidden="true"></i>
           </button>
         </div>
       </div>
@@ -598,9 +648,9 @@
   <div class="row">
     <!-- Column no.1 -->
     <div class="col col-12 col-sm-12 col-md-12 col-lg-6">
-      <div class="container text-center">
+      <!-- <div class="container text-center"> -->
         <div class="row">
-          <div class="col mt-lg-5 mt-md-5 col-12 col-sm-12 col-md-6 col-lg-6">
+          <div class="col mt-lg-5 mt-md-5 col-12 col-sm-12 col-md-6 col-lg-6 mt-3">
                <div class="card icon-boxes">
                  <div class="card-body">
                    <p class="card-title"><i class="fa-solid fa-gear icons-gradient"></i></p>
@@ -609,7 +659,7 @@
                  </div>
                </div>
           </div>
-          <div class="col col-12 col-sm-12 col-md-6 col-lg-6">
+          <div class="col col-12 col-sm-12 col-md-6 col-lg-6 mt-3">
               <div class="card icon-boxes">
                  <div class="card-body">
                    <p class="card-title"><i class="fa-solid fa-globe icons-gradient"></i></p>
@@ -618,7 +668,7 @@
                  </div>
                </div>
           </div>
-           <div class="col mt-lg-5 mt-md-5 col-12 col-sm-12 col-md-6 col-lg-6">
+           <div class="col mt-lg-5 mt-md-5 col-12 col-sm-12 col-md-6 col-lg-6 mt-3">
               <div class="card icon-boxes">
                  <div class="card-body">
                    <p class="card-title"><i class="fa-solid fa-signal icons-gradient"></i></p>
@@ -627,7 +677,7 @@
                  </div>
                </div>
           </div>
-          <div class="col col-12 col-sm-12 col-md-6 col-lg-6">
+          <div class="col col-12 col-sm-12 col-md-6 col-lg-6 mt-3">
               <div class="card icon-boxes">
                  <div class="card-body">
                    <p class="card-title"><i class="fa fa-rocket icons-gradient" aria-hidden="true "></i></p>
@@ -637,7 +687,7 @@
                </div>
           </div>
         </div>
-      </div>
+      <!-- </div> -->
     </div>
 
 
@@ -647,7 +697,7 @@
         <img class="d-none d-lg-block side-bg-image" src="images/shape3-home1.png" alt="">
       <h5 class="sub-heading">About us</h5>
       <h1 class="main-heading">Grow Your Buisness <br> with Our SEO Agency</h1>
-      <p style="z-index: 40;position: relative;">
+      <p class="aboutus-para">
 				Our approach to SEO is uniquely built around what we know works…and what we know 
         doesn’t work. With over 200 verified factors in play within Google’s search algorithm,
         most agencies will rely on old tactics that no longer work, or guess with new tactics
@@ -655,7 +705,7 @@
       </p>
       <div class="container-fluid text-center">
         <div class="row">
-          <div class="col-md-4 col-sm-6 col-lg-4 col-4">
+          <div class="col-md-4 col-sm-6 col-lg-4 col-6">
               <div class="num-counter s2">
                   <div>
                       <span class="num" data-to="330" data-time="2000">0</span>
@@ -664,7 +714,7 @@
                   <h6>ACTIVE CLIENTS</h6> 
               </div>
           </div>
-          <div class="col-md-4 col-sm-6 col-lg-4 col-4">
+          <div class="col-md-4 col-sm-6 col-lg-4 col-6">
             <div class="num-counter s2">
                 <div>
                     <span class="num" data-to="850" data-time="2000">0</span>
@@ -673,7 +723,7 @@
                 <h6>PROJECT DONE</h6>
             </div>
         </div>
-          <div class="col-md-4 col-sm-6 col-lg-4 col-4">
+          <div class="col-md-4 col-sm-12 col-lg-4 col-12">
               <div class="num-counter s2">
                   <div>
                       <span class="num" data-to="25" data-time="2000">0</span>
@@ -694,14 +744,14 @@
   <div class="container text-center">
     <div class="row">
       <!-- Column No.1 -->
-      <div class="col text-lg-start">
+      <div class="col col-12 col-sm-12 col-md-6 col-lg-6 text-lg-start text-md-start">
         <h5 class="sub-heading">RECENT PROJECTS</h5>
         <h1 class="main-heading mb-3">Our Latest Case Studies</h1>
         <p>If we had a ‘secret sauce’ it would be our awesome people.
           We have only professional team!</p>
       </div>
       <!-- Column No.2 -->
-      <div class="col text-lg-end">
+      <div class="col col-12 col-sm-12 col-md-6 col-lg-6 text-lg-end">
         <button class="secondery-btn"> I'M READY<i class="fa fa-arrow-right" aria-hidden="true"></i>
       </div>
     </div>
@@ -723,7 +773,10 @@
           <div class="portfolio-info s1">
               <div class="portfolio-info-inner">
                   <h5><a class="slider-links" href="#">Crypto App Project</a></h5>
-                  <p class="portfolio-cates"><a class="slider-links" href="#">Marketing</a><span>/</span><a class="slider-links" href="#">Optimization</a><span>/</span></p> 
+                  <p class="portfolio-cates"><a class="slider-links" href="#">Marketing</a>
+                    <span>/</span>
+                    <a class="slider-links" href="#">Optimization</a><span>/</span>
+                  </p> 
               </div>
           </div>
       </div>
@@ -786,7 +839,7 @@
           </div>
           <div class="portfolio-info s1">
               <div class="portfolio-info-inner">
-                  <h5><a href="portfolio-single.html">Social Media App</a></h5>
+                  <h5><a href="#" style="text-decoration: none;">Social Media App</a></h5>
                   <p class="portfolio-cates"><a class="slider-links" href="#">Marketing</a><span>/</span>
                     <a class="slider-links" href="#">Media</a><span>/</span></p>  
               </div>
@@ -819,7 +872,7 @@
           </div>
           <div class="portfolio-info s1">
               <div class="portfolio-info-inner">
-                  <h5><a href="portfolio-single.html">New Soft Watch</a></h5>
+                  <h5><a href="#" style="text-decoration: none;">New Soft Watch</a></h5>
                   <p class="portfolio-cates"><a class="slider-links" href="#">Media</a><span>/</span><a class="slider-links" href="#">Optimization</a><span>/</span></p>
               </div>
           </div>
@@ -834,7 +887,7 @@
           </div>
           <div class="portfolio-info s1">
               <div class="portfolio-info-inner">
-                  <h5><a href="portfolio-single.html">UX Design For Tubus</a></h5>
+                  <h5><a href="#" style="text-decoration: none;">UX Design For Tubus</a></h5>
                   <p class="portfolio-cates"><a class="slider-links" href="#">Development</a></p> 
               </div>
           </div>
@@ -849,7 +902,7 @@
           </div>
           <div class="portfolio-info s1">
               <div class="portfolio-info-inner">
-                  <h5><a href="portfolio-single.html">Analysis of Security</a></h5>
+                  <h5><a href="#" style="text-decoration: none;">Analysis of Security</a></h5>
                   <p class="portfolio-cates"><a class="slider-links" href="#">Marketing</a><span>/</span><a class="slider-links" href="#">Optimization</a><span>/</span></p>
               </div>
           </div>
@@ -950,7 +1003,7 @@
   <div class="container">
     <h1>Take Website to Next Level!</h1>
     <div class="container">
-      <a href="">
+      <a href="images/Tips for hiring an SEO specialist _ Search for Beginners Ep 9.mp4">
       <button class="btn-inner" style="border-color: transparent;">
         <i class="fa fa-play" ></i>
        </button>
@@ -964,14 +1017,14 @@
   <div class="container text-center">
     <div class="row">
       <!-- Column No.1 -->
-      <div class="col text-lg-start">
+      <div class="col col-12 col-sm-12 col-md-6 col-lg-6 text-lg-start text-md-start">
         <h5 class="sub-heading">OUR BLOG</h5>
         <h1 class="main-heading mb-3">Our Latest Media</h1>
         <p>Our campaigns get your business in front of the right people at the
           right time to increase organic traffic and boost engagement.</p>
       </div>
       <!-- Column No.2 -->
-      <div class="col text-lg-end">
+      <div class="col col-12 col-sm-12 col-md-6 col-lg-6 text-lg-end">
         <button class="secondery-btn">All News<i class="fa fa-arrow-right" aria-hidden="true"></i>
       </div>
     </div>
@@ -981,7 +1034,7 @@
 <!-- SEO Cards Starts -->
 <div class="container text-start">
   <div class="row">
-    <div class="col">
+    <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-3">
       <div class="card seo-cards">
         <button class="seo-card-btn">Marketing</button>
         <button class="seo-card-btn2">SEO</button>
@@ -994,7 +1047,7 @@
         </div>
       </div>
     </div>
-    <div class="col">
+    <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-3">
       <div class="card seo-cards">
         <button class="seo-card-btn">Marketing</button>
         <button class="seo-card-btn2">SEO</button>
@@ -1008,7 +1061,7 @@
         </div>
       </div>
     </div>
-    <div class="col">
+    <div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-3">
       <div class="card seo-cards">
         <button class="seo-card-btn">Marketing</button>
         <button class="seo-card-btn2">SEO</button>
@@ -1032,7 +1085,7 @@
   <div class="container text-start footer-content">
     <div class="row">
       <!-- Footer 1st column -->
-      <div class="col col-12 col-sm-12 col-md-6 col-lg-3">
+      <div class="col col-12 col-sm-12 col-md-6 col-lg-3 p-2">
         <img src="images/logo.png" alt="">
         <p>Our approach to SEO is uniquely built around what we know works…and what we know doesn’t work. 
           With over 200 verified factors in play.
@@ -1045,7 +1098,7 @@
         </div>
       </div>
       <!-- Footer 2nd column -->
-      <div class="col col-12 col-sm-12 col-md-6 col-lg-3">
+      <div class="col col-12 col-sm-12 col-md-6 col-lg-3 p-2">
         <h5>Contacts</h5>
         <p><span class="green-text fw-bold">Address:</span> 411 University St, Seattle, USA</p>
         <p><span class="green-text fw-bold">Email:</span> onum_company@mail.com</p>
@@ -1054,7 +1107,7 @@
         </p>
       </div>
       <!-- Footer 3rd column -->
-      <div class="col col-12 col-sm-12 col-md-6 col-lg-3">
+      <div class="col col-12 col-sm-12 col-md-6 col-lg-3 p-2">
         <h5>Services</h5>
         <p><a class="footer-links" href="#">SEO for Small Business</a></p>
         <p><a class="footer-links" href="#">SEO for Local Services</a></p>
@@ -1063,7 +1116,7 @@
         <p><a class="footer-links" href="#">International SEO</a></p>
       </div>
       <!-- Footer 4th column -->
-      <div class="col col-12 col-sm-12 col-md-6 col-lg-3">
+      <div class="col col-12 col-sm-12 col-md-6 col-lg-3 p-2">
         <h5>Gallery</h5>
         <div class=" text-center">
           <div class="row">
@@ -1111,7 +1164,6 @@ integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CX
     const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
-  slidesPerGroup: 3,
   loop: true,
 
   // If we need pagination
@@ -1123,16 +1175,24 @@ integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CX
         delay: 3000,
       },
   breakpoints: {
+         500:{
+          slidesPerView: 1,
+          slidesPerGroup: 1,
+          spaceBetween: 20,
+         },
           640: {
             slidesPerView: 2,
+            slidesPerGroup: 1,
             spaceBetween: 20,
           },
           768: {
             slidesPerView: 3,
+            slidesPerGroup: 3,
             spaceBetween: 40,
           },
           1024: {
             slidesPerView: 3,
+            slidesPerGroup: 3,
             spaceBetween: 50,
           },
         },
