@@ -79,6 +79,20 @@ $('.side-panel').click(function (e) {
         });
     });
 
+    $(".video-btn").click(function (e) { 
+      $(".video-display").toggle();
+      $("#seo-video").setAttribute("autoplay","on");
+    });
+
+    $(".video-close").click(function (e) { 
+      $(".video-display").css({"display": "none"});
+    });
+
+    $(".video").click(function (e) { 
+      $(".video").css({"display": "block"});
+      
+    });
+
     // if (screen.width > 1025) {
     //     $('.navbar').addClass('navbar-expand');
     // }
